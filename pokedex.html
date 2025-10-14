@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex Digital</title>
+  <link rel="stylesheet" href="style_pokedex.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Pokédex Digital!</h1>
+  </header>
+
+  <main>
+    <!-- Barra de busca -->
+    <section class="search-section">
+      <input type="text" id="search" placeholder="Digite o nome ou número do Pokémon...">
+      <button onclick="buscarPokemon()">Buscar</button>
+    </section>
+
+    <!-- Lista de Pokémons -->
+    <section class="pokedex" id="pokedex">
+      <!-- Cards serão inseridos pelo script -->
+    </section>
+
+    <!-- Lista de Pokémons -->
+<section class="pokedex" id="pokedex">
+  <!-- Os cards são adicionados dinamicamente -->
+</section>
+
+<!-- Botão de carregar mais -->
+<section class="load-more">
+  <button onclick="carregarPokemons()">Carregar mais ⬇️</button>
+</section>
+
+  <footer>
+    <p>&copy; 2025 Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

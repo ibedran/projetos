@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  background: linear-gradient(135deg, #e63946, #457b9d);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  opacity: 0;             
+  transition: opacity 0.6s ease; 
+}
+
+body.loaded {
+  opacity: 1;             
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.search-section {
+  text-align: center;
+  margin: 20px;
+}
+
+.search-section input {
+  padding: 12px 25px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: none;
+  width: 250px;
+}
+
+.search-section button {
+  padding: 15px 25px;
+  margin-left: 8px;
+  border: none;
+  border-radius: 8px;
+  background: hsl(0, 0%, 0%);;
+  color: hsl(0, 0%, 100%);;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-section button:hover {
+  background: #c00404;
+}
+
+.pokedex {
+  display: flex;
+  flex-wrap: wrap;         /* Permite quebrar linha */
+  justify-content: center; /* Centraliza os cards */
+  gap: 5px;                /* Espaço entre os cards */
+  padding: 20px;           /* Espaçamento interno */
+}
+
+.pokemon-card {
+  background: #fff;
+  color: #333;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  width: 220px; /* Ajustado para caber mais na tela */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.05); /* Efeito ao passar o mouse */
+}
+
+.pokemon-card img {
+  width: 120px; /* Reduzido para manter proporção */
+}
+
+footer {
+  text-align: center;
+  padding: 40px;
+  margin-top: 200px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px 10px rgba(0, 0, 0, 0.3);
+}
+
+.load-more {
+  text-align: center;
+  margin: 20px;
+}
+
+.load-more button {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 8px;
+  background: #000;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.load-more button:hover {
+  background: #c00404;
+}
