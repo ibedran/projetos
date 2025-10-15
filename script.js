@@ -72,7 +72,7 @@ async function buscarPokemon() {
     document.getElementById("page-info").textContent = "Resultado da busca";
   } catch (error) {
     console.error("Erro:", error);
-    alert("Ocorreu um erro ao buscar o Pokémon.");
+    
   }
 }
 
@@ -120,4 +120,5 @@ window.addEventListener("load", () => {
   document.body.classList.add("loaded");
   carregarPokemonList();
   carregarPokemons(); 
+
 });
